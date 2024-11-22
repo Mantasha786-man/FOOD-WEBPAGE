@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(7px);
+    z-index: -1;
+  }
+ul{
+    display: flex;
+    list-style: none;
+    background-color: rgba(255, 255, 255, 0.519);
+    justify-content: center;
+    padding: 20px;
+}
+li a{
+    margin: 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+li a:hover{
+    text-decoration: underline;
+    text-shadow: 0 0 10px black;
+}
+/* main page  */
+.home-page{
+    text-align: center;
+    margin-top: 10%;
+    background-color: rgba(255, 255, 255, 0.519);
+}
+.home-page h1{
+    font-size: 50px;
+    
+}
+.home-page p{
+    margin-top: 30px;
+    font-size: 30px;
+    text-align: center;
+}
+.home-page h6{
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+button{
+    background-color: rgba(255, 255, 255, 0.519);
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+    box-shadow: 0 0 20px black;
+}
+button:hover{
+    text-shadow: 0 0 10px black;
+    border: 1px solid black;
+    background-color: none;
+}
+/* menu and chefs */
+#h1{
+    text-align: center;
+    margin-top: 6%;
+   color: white;
+    padding: 20px;
+}
+#h2{
+    text-align: center;
+   color: white;
+    padding: 20px;
+}
+#india{
+    width:230px;
+}
+.container{
+    float: inline-start;
+    align-content: center;
+    flex-direction: column;
+    background-color:rgba(255, 255, 255, 0.519) ;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 20px;
+    margin: 10px;
+}
+.container1{
+    float: inline-start;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-left: 4%;
+    background-color:rgba(255, 255, 255, 0.519) ;
+    margin: 10px;
+}
+.container h1{
+    text-align: center;
+}
+img{
+    height: 150px;
+    border-radius: 20px;
+}
+/* bg images */
+#head{
+    background-image: url(images/d\ bg.jpg);
+    min-height: 100%;
+}
+#home{
+    background-image: url(images/v\ bg.jpg);
+    min-height: 100%;
+}
+#contact{
+    background-image: url(images/s16.jpg);
+    min-height: 100%;
+}
+#head,
+#home,
+#contact  {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/* about and service */
+#about h1{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
+#service h1{
+    font-size: 40px;
+    text-align: center;
+}
+#about p{
+    font-size: 20px;
+}
+#img{
+    flex: 1;
+}
+.h-card {
+    display: flex;
+    margin: 2rem 1rem;
+    box-shadow: 0px 5px 4px rgba(221, 221, 221, 0.25);
+    align-items: center;
+    background-color:rgba(255, 255, 255, 0.519) ;
+    border: 1px solid #e2e2e2;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+  
+  .card_content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+.h-card img{
+    height: 400px;
+  }
+#normal{
+    height: 400px;
+    float: left;
+}
+#service p{
+        font-size: 20px;
+        float: right;
+}
+/* contact */
+#contact h1{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+label{
+    font-size: 20px;
+    justify-content: center;
+    margin-left: 45%;
+    color: white;
+}
+input[type="text"]{
+    padding: 10px;
+    margin: 10px;
+    margin-left: 33%;
+    width: 30%;
+    text-align: center;
+}
+/* footer  */
+footer {
+    background-color:rgba(255, 255, 255, 0.519) ;
+    padding: 20px;
+    text-align: center;
+    width: 97.96%;
+    position: relative; /* Change to 'fixed' if you want it always visible */
+    bottom: 0;
+    display: flex;
+    justify-content: space-around; /* Aligns children evenly */
+  }
+  
+  footer div {
+    flex: 1;
+    margin: 0 10px;
+  }
+  
+  footer h1, p {
+    text-align: left;
+    margin: 5px 0;
+  }
+  .p{
+    text-align: center;
+    border: 1px solid black;
+    font-size: 20px;
+    background-color:rgba(255, 255, 255, 0.519) ;
+    padding: 20px;
+    margin-top: 0 ;
+  }
+  @media only screen and (max-width: 768px) {
+    ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .home-page h6{
+        font-size: 15px;
+    }
+    .container{
+        margin-left: 10%;
+    }
+    .container1{
+        margin-left: 10%;
+    }
+    #about p{
+        font-size: 10px;
+    }
+    #service p{
+        font-size: 10px;
+    }
+    .h-card{
+        display: flex;
+        flex-direction: column;
+    }
+    .card_content{
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    #img{
+        width: 100%;
+    }
+    footer {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center; /* Center items */
+        width: 320px;
+      }
+  }
